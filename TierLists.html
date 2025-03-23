@@ -1,0 +1,79 @@
+<html>
+    <script>
+        let GunList = document.querySelectorAll('.GunList');
+        let ArmorList = document.querySelector('.ArmorList');
+        let ClanList = document.querySelector('.ClanList');
+        let ArtList = document.querySelector('.ArtList');
+
+        let GunlistContainer = document.querySelectorAll('.gunlist-container');
+        let ArmorListContainer = document.querySelector('.armorlist-container');
+        let ClanListContainer = document.querySelector('.clanlist-container');
+        let ArtListContainer = document.querySelector('.artlist-container');
+
+        GunlistContainer.addEventListener('click', function () {
+        ArmorList.style.display = 'none';
+        ClanList.style.display = 'none';
+        ArtList.style.display = 'none';
+        GunList.style.display = 'flex';
+        console.log("все пиздато");})
+
+    </script>
+<header>
+    <title>SCHelper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <h1 onclick=location.href='main.html' class="name">SC<span class="author">Helper</span></h1>   
+
+    <h1 class="nav">
+        <h1 onclick=location.href='PatchNotes.html' class="nav-item">Stalcall</h1>
+        <h1 onclick=location.href='PatchNotes.html' class="nav-item">Stalcalc</h1>
+        <h1 onclick=location.href='PatchNotes.html' class="nav-item">Tkkcalc</h1>
+        <h1 onclick=location.href='TierLists.html' class="nav-item">Tierlists</h1>
+    </h1>
+
+    <h1 class="login-button">LOG IN</h1>
+
+</header>
+
+<body bgcolor="#1A1A1A">
+
+    <div class="functions-container">
+        <div class="gunlist-container">
+            <h1 class="functions-description">GunList -TierList оружия в Stalcraft</h1>   
+        </div>
+        <div class="armorlist-container">
+            <h1 class="functions-description">ArmorList -TierList брони в Stalcraft</h1>   
+        </div>
+        <div class="clanlist-container">
+            <h1 class="functions-description">ClanList -TierList кланов в Stalcraft</h1>   
+        </div>
+        <div class="artlist-container">
+            <h1 class="functions-description">ArtList -TierList артефактов в Stalcraft</h1>
+        </div>
+    </div>
+
+    <div class="Lists">
+        <div class="GunList">asdasdasd</div>
+        <div class="ArmorList"></div>
+        <div class="ClanList"></div>
+        <div class="ArtList"></div>
+    </div>
+
+</body>
+<footer>
+    <div class="primary-info">
+        <h1 class="info">Все права на игру принадлежат <span class="exbo">EXBO</span></h1>
+        <h1 class="founder">Сайт разработан игроком <span class="founder-author">De_cot</span></h1>
+    </div>
+    <div class="other-info">
+        <h1 class="versions">Версия: 0.1.1</h1>
+        <h1 onclick=location.href='PatchNotes.html' class="patches">Список изменений</h1>
+        <h1 onclick=location.href='PrivacyPolicy.html' class="politics">Политика конфиденциальности</h1>
+        <h1 class="beta">Сайт находится в раннем доступе многие функции могут быть не доступны или работать не правильно</h1>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,424 @@
+@font-face {
+    font-family: "Moncerat",sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap")
+  
+  } 
+  *{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    }
+
+  header {
+    display: flex;
+  }
+
+
+
+  .h3class {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 40px;
+    color: #E6E6E6;
+    display: none;/*Add in js to change the parameter*/
+  }
+
+  .name{
+    display:inline-block;/*Add in js to change the parameter*/
+    margin: left;
+    margin-left: 5%;
+    height:fit-content;
+    display: flex;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 40px;
+    color: #E6E6E6;
+    white-space: nowrap
+  } 
+  .author{
+    white-space: nowrap;
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: 900; 
+    color: #191919;
+    background-image: linear-gradient(to right, #00BA13 0%, #DBFF00 46%, #7BDB00 100%);
+    cursor: pointer;
+  }
+  .author:hover{
+    font-size: 40px;
+    font-weight: 1000;
+    transition-duration: 0.5s;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .author:active {
+    transition-property: box-shadow, transform;
+    box-shadow: none;
+    transform: none;
+}
+
+
+
+.nav {
+  display: flex;
+} 
+.nav-item{
+  display:inline-block;/*Add in js to change the parameter*/
+  margin: left;
+  margin-left: 5%;
+  height:fit-content;
+  display: flex;
+  padding: 0px 15px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 40px;  
+  color: #E6E6E6;
+
+  white-space: nowrap
+
+} 
+.nav-item:hover{
+  color: #191919;
+  background: #E6E6E6;
+  cursor: pointer;
+} 
+
+
+
+.login-button{
+  display:inline-block;/*Add in js to change the parameter*/
+  margin: left;
+  margin-left: 5%;
+  height:fit-content;
+  display: flex;
+  padding: 0px 15px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 40px;  
+  color: #191919;
+  background: linear-gradient(to right, #00BA13 0%, #DBFF00 46%, #7BDB00 100%);
+  white-space: nowrap
+}
+
+.login-button:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  filter:hue-rotate(150deg);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.description-container{
+  background-color: #E6E6E6;;
+  margin-left: 20%;
+  margin-right: 20%;
+  height:fit-content;
+  display: inline-block;
+
+}
+.description{
+  margin-left: 3%;
+  height:fit-content;
+  font-size: 35px;
+  color: #191919;
+} 
+.description-container:hover{
+  margin-left: 16%;
+  margin-right: 16%;
+  transition-duration: 0.5s;
+  transition: 0.4s;
+
+}
+.description:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+  cursor: pointer;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.functions-description{
+  margin-left: 3%;
+  height:fit-content;
+  font-size: 35px;
+  color: #191919;
+}
+.functions-container{
+  display: flex;
+  margin-top: 5%;
+}
+.stalcall-container{
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #E6E6E6;
+  height:fit-content;
+  display: inline-block;
+}
+.stalcalc-container{
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #E6E6E6;
+  height:fit-content;
+  display: inline-block;
+}
+.tkkcalc-container{
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #E6E6E6;
+  height:fit-content;
+  display: inline-block;
+}
+.tierlists-container{
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #E6E6E6;
+  height:fit-content;
+  display: inline-block;
+}
+
+
+
+.stalcall-container:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  margin-top: 1%;
+  background: linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+  cursor: pointer;
+}
+.stalcalc-container:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  margin-top: 1%;
+  background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  cursor: pointer;
+}
+.tkkcalc-container:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  margin-top: 1%;
+  background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+  cursor: pointer;
+}
+.tierlists-container:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  margin-top: 1%;
+  background: linear-gradient(90deg, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+  cursor: pointer;
+}
+
+
+
+
+
+.primary-info{
+  margin-top: 20%;
+  border-top: solid;
+  border-top-color:#E6E6E6;
+}
+.info{
+  margin-left: 2%;
+  height:fit-content;
+  font-size: 20px;
+  color: #E6E6E6;
+}
+.founder{
+  margin-left: 2%;
+  height:fit-content;
+  font-size: 20px;
+  color: #E6E6E6;
+}
+.founder-author{
+  white-space: nowrap;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 900; 
+  color: #191919;
+  background-image: linear-gradient(to right, #00BA13 0%, #DBFF00 46%, #7BDB00 100%);
+  cursor: pointer;
+}
+.founder-author:hover{
+  font-size: 22px;
+  font-weight: 10000;
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.exbo{
+  white-space: nowrap;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 900; 
+  cursor: pointer;
+  background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.exbo:hover{
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 22px;
+  font-weight: 10000;
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+
+
+.other-info{
+  margin-top: 1%;
+  border-top: solid;
+  border-top-color:#E6E6E6;
+  display: flex;
+}
+.versions{
+  margin-left: 2%;
+  height:fit-content;
+  font-size: 15px;
+  color: #E6E6E6;
+}
+.patches{
+  margin-left: 7%;
+  height:fit-content;
+  font-size: 15px;
+  color: #E6E6E6;
+}
+.politics{
+  margin-left: 7%;
+  height:fit-content;
+  font-size: 15px;
+  color: #E6E6E6;
+}
+.beta{
+  margin-left: 7%;
+  height:fit-content;
+  font-size: 15px;
+  color: #E6E6E6;
+}
+.versions:hover{
+  background-image: linear-gradient(to right, #00BA13 0%, #DBFF00 46%, #7BDB00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.patches:hover{
+  background: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.politics:hover{
+  background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.beta:hover{
+  background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gunlist-container{
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #E6E6E6;
+  height:fit-content;
+  display: inline-block;
+}
+.armorlist-container{
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #E6E6E6;
+  height:fit-content;
+  display: inline-block;
+}
+.clanlist-container{
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #E6E6E6;
+  height:fit-content;
+  display: inline-block;
+}
+.artlist-container{
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: #E6E6E6;
+  height:fit-content;
+  display: inline-block;
+}
+
+
+
+.gunlist-container:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  margin-top: 1%;
+  background: linear-gradient(90deg, hsla(341, 94%, 49%, 1) 0%, hsla(16, 90%, 77%, 1) 100%);
+  cursor: pointer;
+}
+.armorlist-container:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  margin-top: 1%;
+  background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%);
+  cursor: pointer;
+}
+.clanlist-container:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  margin-top: 1%;
+  background: linear-gradient(90deg, hsla(17, 95%, 50%, 1) 0%, hsla(42, 94%, 57%, 1) 100%);
+  cursor: pointer;
+}
+.artlist-container:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  margin-top: 1%;
+  background: linear-gradient(90deg, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+  cursor: pointer;
+}
+
+
+
+.GunList{
+  display: none;
+}
+.ArmorList{
+  display: none;
+}
+.ClanList{
+  display: none;
+}
+.ArtList{
+  display: none;
+}
