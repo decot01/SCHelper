@@ -1,23 +1,4 @@
 <html>
-    <script>
-        let GunList = document.querySelectorAll('.GunList');
-        let ArmorList = document.querySelector('.ArmorList');
-        let ClanList = document.querySelector('.ClanList');
-        let ArtList = document.querySelector('.ArtList');
-
-        let GunlistContainer = document.querySelectorAll('.gunlist-container');
-        let ArmorListContainer = document.querySelector('.armorlist-container');
-        let ClanListContainer = document.querySelector('.clanlist-container');
-        let ArtListContainer = document.querySelector('.artlist-container');
-
-        GunlistContainer.addEventListener('click', function () {
-        ArmorList.style.display = 'none';
-        ClanList.style.display = 'none';
-        ArtList.style.display = 'none';
-        GunList.style.display = 'flex';
-        console.log("все пиздато");})
-
-    </script>
 <header>
     <title>SCHelper</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,25 +23,25 @@
 <body bgcolor="#1A1A1A">
 
     <div class="functions-container">
-        <div class="gunlist-container">
+        <div onclick="show('gun')" class="gunlist-container">
             <h1 class="functions-description">GunList -TierList оружия в Stalcraft</h1>   
         </div>
-        <div class="armorlist-container">
+        <div onclick="show('armor')" class="armorlist-container">
             <h1 class="functions-description">ArmorList -TierList брони в Stalcraft</h1>   
         </div>
-        <div class="clanlist-container">
+        <div onclick="show('clan')" class="clanlist-container">
             <h1 class="functions-description">ClanList -TierList кланов в Stalcraft</h1>   
         </div>
-        <div class="artlist-container">
+        <div onclick="show('art')" class="artlist-container">
             <h1 class="functions-description">ArtList -TierList артефактов в Stalcraft</h1>
         </div>
     </div>
 
     <div class="Lists">
-        <div class="GunList">asdasdasd</div>
-        <div class="ArmorList"></div>
-        <div class="ClanList"></div>
-        <div class="ArtList"></div>
+        <div class="GunList"><img width="1500" height="300" src="assets\guns.png"></div>
+        <div class="ArmorList"><img width="1500" height="300" src="assets\armor.png"></div>
+        <div class="ClanList"><img width="1500" height="300" src="assets\clans.png"></div>
+        <div class="ArtList"><img width="1500" height="300" src="assets\artList.png"></div>
     </div>
 
 </body>
@@ -76,4 +57,6 @@
         <h1 class="beta">Сайт находится в раннем доступе многие функции могут быть не доступны или работать не правильно</h1>
     </div>
 </footer>
+<script src="code.js"></script>
+<script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>  
 </html>
