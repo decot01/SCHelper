@@ -422,3 +422,110 @@
 .ArtList{
   display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.workInProgress{
+  display:inline-block;/*Add in js to change the parameter*/
+  margin: left;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  height:fit-content;
+  display: flex;
+  padding: 0px 15px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 40px;  
+  color: #191919;
+  background: linear-gradient(to right, #00BA13 0%, #DBFF00 46%, #7BDB00 100%);
+  white-space: nowrap
+}
+.workInProgress:hover{
+  transition-duration: 0.5s;
+  transition: 0.4s;
+  filter:hue-rotate(150deg);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map-container{
+  display: flex;
+}
+.map{
+  margin-left: 5%;
+}
+.tools{
+  border-radius: 10%;
+  padding: 15px;
+  background-color: #252525;
+  height:fit-content;
+  display: inline-block;
+  margin-left: 5%;
+}
+
+
+
+.item{
+  margin: 15px;
+}
