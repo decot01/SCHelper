@@ -33,46 +33,51 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+
+
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const items = document.querySelectorAll('.item');
     items.forEach(item => {
       item.addEventListener('click', function(event) {
-        // Предотвращаем всплытие клика до document,
-        // чтобы не снять выделение сразу после установки
+
         event.stopPropagation();
-        // Проверяем, является ли текущий элемент уже выбранным
+
         if (this.classList.contains('selected')) {
           // Если уже выбран, снимаем выделение
           this.classList.remove('selected');
         } else {
-          // Если не выбран, снимаем выделение со всех остальных элементов
+
           items.forEach(i => i.classList.remove('selected'));
-          // И добавляем выделение к текущему элементу
+
           this.classList.add('selected');
         }
       });
     });
-    // Добавляем обработчик клика на весь документ
+
     document.addEventListener('click', function(event) {
-      // Если клик произошел не по элементу с классом 'item'
-      // (это уже обработано event.stopPropagation() выше)
-      // и если клик не был внутри .tools контейнера (опционально, но хорошая практика)
-      // то снимаем выделение со всех элементов
-      if (!event.target.closest('.tools')) { // Проверяем, что клик не был внутри контейнера .tools
+
+      if (!event.target.closest('.tools')) {
         items.forEach(i => i.classList.remove('selected'));
       }
     });
   });
-  
 
 
 
   document.addEventListener('DOMContentLoaded', function() {
     const colorTool = document.querySelector('.colorTool');
-    const colorFillArea = document.querySelector('.colorTool .color-fill-area'); // Получаем область для заливки
+    const colorFillArea = document.querySelector('.colorTool .color-fill-area');
     const colorContextMenu = document.createElement('div');
     colorContextMenu.className = 'color-context-menu';
-    const colors = ['blue', 'orange', 'green', 'red'];
+    const colors = ['blue', 'orange', 'red', 'green'];
     colors.forEach(color => {
         const colorOption = document.createElement('div');
         colorOption.className = `color-option ${color}`;
@@ -80,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         colorContextMenu.appendChild(colorOption);
     });
     document.body.appendChild(colorContextMenu);
-    if (colorTool && colorFillArea) { // Убедимся, что обе части найдены
+    if (colorTool && colorFillArea) {
         colorTool.addEventListener('click', function(e) {
             e.preventDefault();
             colorContextMenu.style.display = 'block';

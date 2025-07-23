@@ -15,8 +15,33 @@
   }
   
   header {
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
     display: flex;
   }
+
+  .button{
+    display:inline-block;/*Add in js to change the parameter*/
+    margin: left;
+    height:fit-content;
+    display: flex;
+    padding: 0px 15px;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 40px;  
+    color: #E6E6E6;
+    white-space: nowrap
+  }
+  
+  .button:hover{
+    color: #191919;
+    background: #E6E6E6;
+    cursor: pointer;
+  }
+
 
 
 
@@ -111,6 +136,15 @@
   filter:hue-rotate(150deg);
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,6 +257,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 .primary-info{
   margin-top: 20%;
   border-top: solid;
@@ -279,6 +323,11 @@
 
 
 .other-info{
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
   margin-top: 1%;
   border-top: solid;
   border-top-color:#E6E6E6;
@@ -514,10 +563,22 @@
 
 
 .map-container{
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
   display: flex;
 }
 .map{
   margin-left: 5%;
+}
+.map-controler{
+  justify-content: space-between;
+  display: flex;
+}
+.map-name{
+  color: #E6E6E6;
 }
 
 
