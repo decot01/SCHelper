@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='style.css'> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="code.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>  
 
     <h1 onclick=location.href='main.html' class="name">SC<span class="author">Helper</span></h1>   
 
@@ -22,18 +24,23 @@
 
 <body bgcolor="#1A1A1A">
 
-    <script src="code.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>  
+
 
     <div class="map-container">
         <div class="tools">
-            <img width="50" height="50" class="item" src="assets\camp.png">
-            <img width="50" height="50" class="item"src="assets\pen.png">
-            <img width="50" height="50" class="item"src="assets\arrow.png">
+            <img width="50" height="50" class="item" src="assets\campTool.png">
+            <img width="50" height="50" class="item"src="assets\penTool.png">
+            <img width="50" height="50" class="item"src="assets\arrowTool.png">
+            <img width="50" height="50" class="item" src="assets\selectionTool.png">
+            <img width="50" height="50" class="item"src="assets\eraserTool.png">
+            <div class="colorTool">
+                <div class="color-fill-area"></div>
+            </div>
+
         </div>
 
         <div class="map">
-            <img width="500" height="500" src="assets\map1.jpg">
+            <img width="535" height="535" src="assets\map1.jpg">
         </div>
     </div>
 
@@ -49,5 +56,5 @@
         <h1 onclick=location.href='PrivacyPolicy.html' class="politics">Политика конфиденциальности</h1>
         <h1 class="beta">Сайт находится в раннем доступе многие функции могут быть не доступны или работать не правильно</h1>
     </div>
-</footer>
+</footer>    
 </html>
